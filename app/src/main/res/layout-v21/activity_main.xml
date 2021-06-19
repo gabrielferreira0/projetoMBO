@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/viewCalculadora"
+                android:layout_width="274dp"
+                android:layout_height="86dp"
+                android:layout_marginBottom="25dp"
+                android:text="Calculadora"
+                app:icon="@drawable/icon_calculadora_foreground"
+                app:iconTint="#FBFBFB"
+                app:rippleColor="#2196F3" />
+
+            <Button
+                android:id="@+id/viewNavegador"
+                android:layout_width="274dp"
+                android:layout_height="86dp"
+                android:layout_marginBottom="20dp"
+                android:text="Navegador"
+                app:icon="@drawable/icon_lupa_foreground"
+                app:iconTint="#F6F6F6" />
+
+            <Button
+                android:id="@+id/viewAgenda"
+                android:layout_width="274dp"
+                android:layout_height="86dp"
+                android:text="Agenda"
+                app:icon="@mipmap/icon_agenda_foreground"
+                app:iconTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/viewLocal"
+                android:layout_width="279dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:text="Localização"
+                app:icon="@mipmap/icon_map_foreground"
+                app:iconTint="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
