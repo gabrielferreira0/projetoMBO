@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     private Button btCalculadora;
     private Button btLocal;
+    private Button btNavegador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         btCalculadora = (Button) findViewById(R.id.viewCalculadora);
         btLocal = (Button) findViewById(R.id.viewLocal);
+        btNavegador = (Button) findViewById(R.id.viewNavegador);
 
         btCalculadora.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +37,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        btNavegador.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this,Navegador.class);
+                startActivity(it);
+            }
+        });
 
 
     }
